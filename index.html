@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Cql-in-two-minutes : Two minute introductions to CQL" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Cql-in-two-minutes</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/DanielHeath/cql-in-two-minutes">View on GitHub</a>
+
+          <h1 id="project_title">Cql-in-two-minutes</h1>
+          <h2 id="project_tagline">Two minute introductions to CQL</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/DanielHeath/cql-in-two-minutes/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/DanielHeath/cql-in-two-minutes/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p></p>
+
+<h3>VERY MUCH WIP.</h3>
+
+<h3>ActiveFacts / CQL</h3>
+
+<p>Learn ActiveFacts / CQL two minutes at a time.</p>
+
+<h3>Meta</h3>
+
+<p><a href="#what-is-cql">What is CQL</a></p>
+
+<p><a href="#about-the-author">About the author ( @DanielHeath )</a></p>
+
+<h3>Introduction</h3>
+
+<p><a href="#installing">Installing</a></p>
+
+<p><a href="#using-from-ruby">Using CQL from your ruby code</a></p>
+
+<p></p>
+
+<hr><h2>What is CQL</h2>
+
+<p>CQL is a schema definition and data query language.</p>
+
+<p>Because it is built on the latest parsing algorithms it is able to read much like natural language while still being formally specified.
+For instance (a super trivial example):</p>
+
+<pre>
+Family Name is written as String(20);
+Given Names is written as String(20);
+Family is identified by its Name;
+Person is identified by Family and Given Names where
+    Person is of one Family,
+    Family includes Person,
+    Person has one Given Names;
+</pre>
+
+<p>This is just natural enough that you can collaborate directly with domain experts.
+Instead of translating their description of the model into SQL you can collaborate directly on the model.
+</p>
+
+<hr><h2>About the author</h2>
+
+<p>
+I'm <a href="https://twitter.com/#!/danielrheath">@danielrheath</a> and I <a href="http://danielrheath.net/">write about tech occasionally</a>.
+I didn't create ActiveFacts but I do think it's pretty cool.
+Feel free to get in touch; I don't bite.
+</p>
+
+<hr><h2>Installing</h2>
+
+<p>
+Installing is simple if you are familiar with ruby; <code>gem install activefacts</code> will do (although releases are somewhat infrequent, so running from <a href="https://github.com/cjheath/activefacts">master</a> - perhaps <a href="http://gembundler.com/git.html">via bundler</a> might be a better option).
+I find guard useful (gem install activefacts-guard doesn't work yet but I plan to write it...)
+TODO: Add a link to a near-empty project with a working guardfile - maybe the master branch of this repo?
+</p>
+
+<hr><p>
+TODO: Show an example of loading &amp; using a CQL file from ruby directly.
+</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Cql-in-two-minutes maintained by <a href="https://github.com/DanielHeath">DanielHeath</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
