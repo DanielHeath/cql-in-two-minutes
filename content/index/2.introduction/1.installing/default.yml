@@ -1,0 +1,9 @@
+:headline: Installing
+:body: |
+  It is currently easiest to use the latest development version as releases are infrequent.
+
+  Installing is simple if you are familiar with ruby and bundler - just add the gitrepo to your gemfile.
+  `gem 'activefacts', :git => 'https://github.com/cjheath/activefacts.git'`
+
+  I find guard useful (gem install activefacts-guard doesn't work yet but I plan to write it...)
+  TODO: Add a link to a near-empty project with a working guardfile - maybe the master branch of this repo?

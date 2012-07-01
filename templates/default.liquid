@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "shared/head" %}
+  <body id="{{slug}}">
+    <section id="wrapper">
+	  	<h2>{{headline}}</h2>
+      <hr/>
+  	  <nav id="sub-navigation">
+  	    <h3>Contents</h3>
+        <ol>
+          {% for child in children %}
+  	        <li>
+  	          <h4>{{child.name}}</h2>
+  	          <ol>
+                {% for grandchild in child.children %}
+      	        <li>
+      	          <a href="#{{grandchild.permalink}}">{{grandchild.name}}</a>
+                </li>
+  	            {% endfor %}
+  	          </ol>
+  	        </li>
+  	      {% endfor %}
+  	    </ol>
+      </nav>
+      <hr/>
+      <section id="deets">
+        {% for child in children %}
+        <section>
+          <h1 id="{{child.permalink}}" >{{child.name}}</h1>
+          {% for grandchild in child.children %}
+          <article id="{{grandchild.permalink}}">
+            <h2>{{grandchild.name}}</h2>
+            {{grandchild.body}}
+          </article>
+          {% endfor %}
+        </section>
+        {% endfor %}
+      </section>
+
+      {% include "shared/footer" %}
+    </section>
+
+  </body>
+  {% include "shared/analytics" %}
+</html>

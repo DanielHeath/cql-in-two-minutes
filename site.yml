@@ -1,0 +1,7 @@
+# The key value pairs found below are available within the templates.
+# {{site_name}}, {{url}}, {{copyright}} and {{analytics_code}}
+
+:site_name: CQL in two minutes
+:url: http://danielheath.github.com/cql-in-two-minutes
+:copyright: 2012
+:analytics_code: UA-33059859-1

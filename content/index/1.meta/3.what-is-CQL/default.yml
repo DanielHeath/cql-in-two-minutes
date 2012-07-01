@@ -1,0 +1,16 @@
+:headline: What is CQL
+:body: |
+  CQL is a human friendly language which compiles to SQL.
+
+  <pre><code>
+  Family Name is written as String(20);
+  Given Names is written as String(20);
+  Family is identified by its Name;
+  Person is identified by Family and Given Names where
+  	Person is of one Family,
+  	Family includes Person,
+  	Person has one Given Names;
+  </code></pre>
+
+  This means that you can work directly with your domain expert.
+  This is important unless all the programmers on your team completely understand the problem they are solving.
